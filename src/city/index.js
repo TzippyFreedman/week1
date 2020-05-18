@@ -44,7 +44,7 @@ function loadHtmlPage() {
     }
     
     if (isNotNull(document.getElementById("citySearchSubmit"))===true) {
-        btnSearchSubmit = document.getElementById("citySearchSubmit");
+     const   btnSearchSubmit = document.getElementById("citySearchSubmit");
         btnSearchSubmit.addEventListener("click",function(){ 
             if (isNotNull(document.getElementById("myInput"))===true)
             showResultsFilterdByCity(document.getElementById("myInput").value);});
